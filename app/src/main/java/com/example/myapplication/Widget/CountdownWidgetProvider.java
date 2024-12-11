@@ -14,10 +14,8 @@ import com.example.myapplication.TypeClasses.Race;
 import com.example.myapplication.TypeClasses.RaceEvent;
 import com.example.myapplication.Utilities.HelperFunctions;
 import com.example.myapplication.Utilities.PreferencesManager;
-import com.example.myapplication.Utilities.TestValues;
 import com.example.myapplication.placeholder.MyApplication;
 
-import java.text.ParseException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -117,8 +115,8 @@ public class CountdownWidgetProvider extends AppWidgetProvider {
                 RaceEvent raceEvent = null;
                 raceEvent = HelperFunctions.getNextRaceEvent2(race);
 
-                views.setTextViewText(R.id.widget_textViewCountdownTitle, race.getRaceName());
-                views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventName());
+                views.setTextViewText(R.id.countdownTextViewCountdownTitle, race.getRaceName());
+                views.setTextViewText(R.id.countdownTextViewEventName, raceEvent.getEventName());
                 views.setTextViewText(R.id.textViewEventDate, raceEvent.getEventName());
                 views.setTextViewText(R.id.widget_textView_race_hour, String.valueOf(hours));
                 views.setTextViewText(R.id.widget_textView_race_min, String.valueOf(minutes));

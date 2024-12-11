@@ -16,7 +16,6 @@ import com.example.myapplication.placeholder.MyApplication;
 import com.example.myapplication.TypeClasses.*;
 
 
-import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -60,8 +59,10 @@ public class CountdownAppWidget extends AppWidgetProvider {
                 RaceEvent raceEvent = null;
                 raceEvent = HelperFunctions.getNextRaceEvent2(race);
 
-                views.setTextViewText(R.id.widget_textViewCountdownTitle, race.getRaceName());
-                views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventName());
+                views.setTextViewText(R.id.countdownTextViewCountdownTitle, race.getRaceName());
+                views.setTextViewText(R.id.countdownTextViewEventName, raceEvent.getEventName());
+                views.setTextViewText(R.id.countdownTextViewEventDate1, raceEvent.getEventDate().substring(0,10));
+                views.setTextViewText(R.id.countdownTextViewEventDate1, raceEvent.getEventDate().substring(11,19));
                 views.setTextViewText(R.id.widget_textView_race_hour, String.valueOf(hours));
                 views.setTextViewText(R.id.widget_textView_race_min, String.valueOf(minutes));
                 views.setTextViewText(R.id.widget_textView_race_sec, String.valueOf(seconds));
@@ -73,9 +74,9 @@ public class CountdownAppWidget extends AppWidgetProvider {
                 int minutes = (int) (timeLeftInMillis / 1000) / 60;
                 int seconds = (int) (timeLeftInMillis / 1000) % 60;
 
-                views.setTextViewText(R.id.widget_textViewCountdownTitle, race.getRaceName());
-                views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventName());
-                views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventDate());
+                views.setTextViewText(R.id.countdownTextViewCountdownTitle, race.getRaceName());
+                views.setTextViewText(R.id.countdownTextViewEventName, raceEvent.getEventName());
+                views.setTextViewText(R.id.countdownTextViewEventName, raceEvent.getEventDate());
                 views.setTextViewText(R.id.widget_textView_race_hour, String.valueOf(hours));
                 views.setTextViewText(R.id.widget_textView_race_min, String.valueOf(minutes));
                 views.setTextViewText(R.id.widget_textView_race_sec, String.valueOf(seconds));
@@ -107,8 +108,8 @@ public class CountdownAppWidget extends AppWidgetProvider {
         int minutes = (int) (timeLeftInMillis / 1000) / 60;
         int seconds = (int) (timeLeftInMillis / 1000) % 60;
 
-        views.setTextViewText(R.id.widget_textViewCountdownTitle, "");
-        views.setTextViewText(R.id.widget_textViewEventName, "");
+        views.setTextViewText(R.id.countdownTextViewCountdownTitle, "");
+        views.setTextViewText(R.id.countdownTextViewEventName, "");
         views.setTextViewText(R.id.widget_textView_race_hour, String.valueOf(hours));
         views.setTextViewText(R.id.widget_textView_race_min, String.valueOf(minutes));
         views.setTextViewText(R.id.widget_textView_race_sec, String.valueOf(seconds));

@@ -22,7 +22,7 @@
         tools:visibility="gone" />
 
     <TextView
-        android:id="@+id/widget_textViewCountdownTitle"
+        android:id="@+id/countdownTextViewCountdownTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
@@ -52,7 +52,7 @@
         tools:visibility="gone" />
 
     <TextView
-        android:id="@+id/widget_textViewEventName"
+        android:id="@+id/countdownTextViewEventName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
@@ -61,7 +61,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/countdownTextViewEventDate1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" December 15 2024"
@@ -70,7 +70,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/countdownTextViewEventDate2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="8:30 AM"

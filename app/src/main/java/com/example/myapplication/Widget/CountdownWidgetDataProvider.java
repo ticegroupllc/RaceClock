@@ -15,8 +15,6 @@ import com.example.myapplication.Utilities.HelperFunctions;
 import com.example.myapplication.Utilities.PreferencesManager;
 import com.example.myapplication.placeholder.MyApplication;
 
-import java.text.ParseException;
-
 public class CountdownWidgetDataProvider implements RemoteViewsService.RemoteViewsFactory {
     private Context context;
     private Cursor cursor;
@@ -81,8 +79,8 @@ public class CountdownWidgetDataProvider implements RemoteViewsService.RemoteVie
             RaceEvent raceEvent = null;
             raceEvent = HelperFunctions.getNextRaceEvent(race);
             cursor.moveToPosition(i);
-            views.setTextViewText(R.id.widget_textViewCountdownTitle, race.getRaceName());
-            views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventName());
+            views.setTextViewText(R.id.countdownTextViewCountdownTitle, race.getRaceName());
+            views.setTextViewText(R.id.countdownTextViewEventName, raceEvent.getEventName());
             views.setTextViewText(R.id.widget_textView_race_hour, String.valueOf(hours));
             views.setTextViewText(R.id.widget_textView_race_min, String.valueOf(minutes));
             views.setTextViewText(R.id.widget_textView_race_sec, String.valueOf(seconds));
