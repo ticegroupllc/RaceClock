@@ -1,0 +1,127 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="app_name">RaceClock</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radiobutton_male">Male</string>
+    <string name="radiobutton_female">Female</string>
+    <string name="textView_Name">Enter Name</string>
+    <string name="textView_Location">Enter Location</string>
+    <string name="textView_Age">Enter Age</string>
+    <string name="interest_Scuba">Scuba</string>
+    <string name="interest_Surfing">Surfing</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_select_series">Select Race Series</string>
+    <string name="button_select_race">Select Race </string>
+    <string name="profile_picture_description">My Profile Pic</string>
+    <string name="title_race">Race</string>
+    <string name="title_clock">Clock</string>
+    <string name="title_countdown">Countdown to lights out!</string>
+    <string name="countdown_race_title">2025 Formula One Snafu Grand Prix</string>
+    <string name="countdown_race_event">Practice 1</string>
+    <string name="countdown_race_day_">11</string>
+    <string name="countdown_race_day_desc">Day</string>
+    <string name="countdown_race_hour">29</string>
+    <string name="countdown_race_hour_desc">Hour</string>
+    <string name="countdown_race_min_desc">Min</string>
+    <string name="countdown_race_min">46</string>
+    <string name="countdown_race_sec_desc">Sec</string>
+    <string name="countdown_race_sec">57</string>
+    <string name="button_privacy">Privacy Policy</string>
+    <string name="privacy_policy_content">Our Privacy Policy includes all the following standard privacy policy requirements. yayayayalsdjflajsdlfjalskdjflaksjdlfkjasldkjflaskjdflkasjdlfjasldkfjalskjdflkasjdlfkjsaldkfjsalkdjflaksjdflkjasdlfkjsaldkfjlaskjdflksaj</string>
+    <string name="button_user_agreement">User Agreement</string>
+    <string name="settings_countdown_options">Countdown Options</string>
+    <string name="settings_countdown_settings_title">Countdown Settings</string>
+    <string name="settings_series_and_race_options">Series &amp; Race Options</string>
+    <string name="settings_countdown_description">Select which events for which to show a countdown. Options includes practice sessions, qualifying sessions, sprints, and the main race.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+    <string name="empty_view_text">MaterialClock</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="save_title">Save</string>
+
+    <!-- Preference Titles -->
+    <string name="design_header">Design</string>
+    <string name="widget_layout_title">Widget orientation</string>
+    <string name="time_header">Time layout</string>
+    <string name="date_header">Date layout</string>
+
+    <string name="color_picker_header">Clock color</string>
+    <string name="show_time_title">Show time</string>
+    <string name="time_format_title">Time format</string>
+    <string name="clock_font_header">Font</string>
+    <string name="time_size_title">Time size</string>
+    <string name="time_align_title">Time align</string>
+
+    <string name="date_align_title">Date align</string>
+    <string name="show_date_title">Show date</string>
+    <string name="date_format_title">Date format</string>
+    <string name="date_size_title">Date size</string>
+    <string name="date_color_picker_title">Date color</string>
+
+    <string name="time_format_dialog_msg">H – Hour in day (0–23)\nk – Hour in day (1–24)\nK – Hour in am/pm (0–11) \nh - Hour in am/pm (1-12)\nm - Minute\ns - Second\na - Am/pm marker</string>
+    <string name="date_format_dialog_msg">y - Year\nM - Month\nd - Day in month\nD - Day in year\nE - Day name in week\nw - Week in year\nW - Week in month</string>
+
+    <!-- SharedPrefereces -->
+    <string name="sp_main">sp_main</string>
+
+    <string name="sp_font">sp_font</string>
+    <string name="sp_layout">sp_layout</string>
+
+    <string name="sp_clock_color">sp_clock_color</string>
+    <string name="sp_show_time">sp_show_time</string>
+    <string name="sp_time_format">sp_time_format</string>
+    <string name="sp_time_size">sp_time_size</string>
+    <string name="sp_time_align">sp_time_align</string>
+
+    <string name="sp_date_align">sp_date_align</string>
+    <string name="sp_show_date">sp_show_date</string>
+    <string name="sp_date_size">sp_date_size</string>
+    <string name="sp_date_format">sp_date_format</string>
+    <string name="sp_date_color">sp_date_color</string>
+</resources>
