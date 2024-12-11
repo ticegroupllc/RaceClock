@@ -128,7 +128,7 @@ public class RaceItemRecyclerViewAdapter extends RecyclerView.Adapter<RaceItemRe
             mContentView.setText(item.getRaceName());
             DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
             String eventDateString = null;
-            eventDateString = HelperFunctions.getNextRaceEvent(item).getEventDate();
+            eventDateString = HelperFunctions.getNextRaceEvent2(item).getEventDate();
             LocalDateTime eventDate = LocalDateTime.now();
             if (eventDateString.length() > 20){
                 eventDateString = new String(eventDateString.substring(0,eventDateString.indexOf('+')) + "Z");

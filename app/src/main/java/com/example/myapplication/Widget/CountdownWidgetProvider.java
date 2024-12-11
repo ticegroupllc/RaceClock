@@ -115,7 +115,7 @@ public class CountdownWidgetProvider extends AppWidgetProvider {
             if(preferences.getRace() != null && !preferences.getRace().isEmpty()) {
                 Race race = HelperFunctions.convertJsonRaceToRace(preferences.getRace());
                 RaceEvent raceEvent = null;
-                raceEvent = HelperFunctions.getNextRaceEvent(race);
+                raceEvent = HelperFunctions.getNextRaceEvent2(race);
 
                 views.setTextViewText(R.id.widget_textViewCountdownTitle, race.getRaceName());
                 views.setTextViewText(R.id.widget_textViewEventName, raceEvent.getEventName());

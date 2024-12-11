@@ -607,39 +607,37 @@ public class HelperFunctions {
         RaceEvent someEvent = TestValues.defaultRaceValue().getRaceEvents().get(0);
         RaceEvent finalRaceEvent = null;
         List<RaceEvent> raceEventListFilteredForEventType = new ArrayList<>();
-        for(RaceEvent raceEvent: race.getRaceEvents()){
-            System.out.println(raceEvent.getEventName() +" , "+ raceEvent.getEventType()+" , "+ raceEvent.getEventDate().toString());
-        }
-        for (RaceEvent raceEvent : race.getRaceEvents()) {
-
-            if (raceEvent.getEventType().equals(RaceEvent.EventType.PRACTICE)) {
-                System.out.println("Handling a practice session: " + raceEvent.getEventType());
-                if (showPracticeTimes) {
-                    System.out.println("Showpractice = " + showPracticeTimes);
-                    raceEventListFilteredForEventType.add(raceEvent);
+        if (!race.getRaceEvents().isEmpty()) {
+            for (RaceEvent raceEvent : race.getRaceEvents()) {
+                if (raceEvent.getEventType()!=null) {
+                    if (raceEvent.getEventType().equals(RaceEvent.EventType.PRACTICE)) {
+                        System.out.println("Handling a practice session: " + raceEvent.getEventType());
+                        if (showPracticeTimes) {
+                            System.out.println("Showpractice = " + showPracticeTimes);
+                            raceEventListFilteredForEventType.add(raceEvent);
+                        }
+                    } else if (raceEvent.getEventType() == RaceEvent.EventType.QUALIFYING) {
+                        System.out.println("Handling a qualifying session: " + raceEvent.getEventType());
+                        if (showQualifyingTimes) {
+                            System.out.println("Showqualifying = " + showQualifyingTimes);
+                            raceEventListFilteredForEventType.add(raceEvent);
+                        }
+                    } else if (raceEvent.getEventType() == RaceEvent.EventType.SPRINTRACE) {
+                        System.out.println("Handling a sprint session: " + raceEvent.getEventType());
+                        if (showSprintTimes) {
+                            System.out.println("Showsprint = " + showSprintTimes);
+                            raceEventListFilteredForEventType.add(raceEvent);
+                        }
+                    } else if (raceEvent.getEventType().equals(RaceEvent.EventType.RACE)) {
+                        System.out.println("Handling a race session: " + raceEvent.getEventType());
+                        if (showRaceTimes) {
+                            System.out.println("Showsrace = " + showRaceTimes);
+                            raceEventListFilteredForEventType.add(raceEvent);
+                        }
+                    } else {
+                        System.out.println("Unknown event type: " + raceEvent.getEventType()); // Handle unknown event types break;
+                    }
                 }
-            } else if (raceEvent.getEventType() == RaceEvent.EventType.QUALIFYING) {
-                System.out.println("Handling a qualifying session: " + raceEvent.getEventType());
-                if (showQualifyingTimes) {
-                    System.out.println("Showqualifying = " + showQualifyingTimes);
-                    raceEventListFilteredForEventType.add(raceEvent);
-                }
-            } else if (raceEvent.getEventType() == RaceEvent.EventType.SPRINTRACE) {
-                System.out.println("Handling a sprint session: " + raceEvent.getEventType());
-                if (showSprintTimes) {
-                    System.out.println("Showsprint = " + showSprintTimes);
-                    raceEventListFilteredForEventType.add(raceEvent);
-                }
-            } else if (raceEvent.getEventType().equals(RaceEvent.EventType.RACE)) {
-                System.out.println("Handling a race session: " + raceEvent.getEventType());
-                if (showRaceTimes) {
-                    System.out.println("Showsrace = " + showRaceTimes);
-                    raceEventListFilteredForEventType.add(raceEvent);
-                }
-            } else {
-                System.out.println("Unknown event type: " + raceEvent.getEventType()); // Handle unknown event types break;
-            }
-
 
             /*switch (raceEvent.getEventType()) {
                 case PRACTICE:
@@ -666,6 +664,7 @@ public class HelperFunctions {
                     System.out.println("Unknown event type: " + raceEvent.getEventType()); // Handle unknown event types break;
             }*/
 
+            }
         }
         System.out.println(("3"));
         List<RaceEvent> raceEventListFilteredForDate = new ArrayList<>();
